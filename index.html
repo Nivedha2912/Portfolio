@@ -4,83 +4,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="theme-color" content="#070b18">
+  <meta name="description" content="Nive's AI and Data Science portfolio.">
+  <title>Nive | AI & Data Science</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      margin: 0;
-    }
-
-    header {
-      background: #1e293b;
-      padding: 20px;
-    }
-
-    section {
-      padding: 50px 20px;
-    }
-
-    h1 {
-      font-size: 42px;
-      color: #38bdf8;
-    }
-
-    h2 {
-      color: #38bdf8;
-    }
-
-    .project {
-      background: #1e293b;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 400px;
-      border-radius: 12px;
-    }
-
-    a {
-      color: #38bdf8;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <h2>My Portfolio</h2>
-  </header>
 
-  <section>
-    <h1>Hello, I'm Your Name!</h1>
-    <h2>AI & Data Science Student</h2>
-    <p>Welcome to my personal portfolio website.</p>
-  </section>
+<header>
+  <nav class="container">
+    <a class="logo" href="#home"><span>N.</span> Nive</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am learning Artificial Intelligence and Data Science.</p>
-  </section>
+<main>
+  <section class="hero container" id="home">
+    <div class="reveal">
+      <div class="eyebrow">Hello, welcome to my portfolio</div>
+      <h1>Hi, I'm <span class="gradient">Nive.</span></h1>
+      <h2>AI & Data Science Student</h2>
+      <p>
+        I'm exploring artificial intelligence, machine learning,
+        and data analytics. I enjoy turning data into insights
+        and building solutions to real-world problems.
+      </p>
 
-  <section>
-    <h2>My Skills</h2>
-    <p>Python | SQL | Machine Learning | Data Analysis</p>
-  </section>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">Explore My Projects ↗</a>
+        <a class="btn" href="#contact">Get In Touch</a>
+      </div>
+    </div>
 
-  <section>
-    <h2>My Projects</h2>
-
-    <div class="project">
-      <h3>My First Project</h3>
-      <p>I will add my data science projects here.</p>
+    <div class="profile-card reveal">
+      <div class="avatar">N.</div>
+      <h3>Nive</h3>
+      <p>Learning today. Building for tomorrow.</p>
+      <div class="status"><span>●</span> Growing my skills every day</div>
     </div>
   </section>
 
-  <section>
-    <h2>Contact Me</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: <a href="https://github.com/">My GitHub</a></p>
+  <section class="section" id="about">
+    <div class="container reveal">
+      <div class="section-heading">
+        <div class="eyebrow">A little about me</div>
+        <h2>Curious mind. <span class="gradient">Data-driven thinking.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="panel">
+          <h3>Who I Am</h3>
+          <p>
+            I'm a student interested in AI and Data Science.
+            I'm developing my skills through coding, experimentation,
+            and practical projects.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>My Goals</h3>
+          <p>
+            Strengthening my Python and data analysis skills,
+            understanding machine learning, and creating projects
+            that demonstrate what I can build.
+          </p>
+          <div class="tags">
+            <span class="tag">Problem Solving</span>
+            <span class="tag">AI & ML</span>
+            <span class="tag">Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <section class="section" id="skills">
+    <div class="container reveal">
+      <div class="section-heading">
+        <div class="eyebrow">My toolkit</div>
+        <h2>Skills I'm developing</h2>
+        <p>Technologies I use or am learning.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill"><span class="skill-icon">Py</span><strong>Python</strong><small>Programming</small></div>
+        <div class="skill"><span class="skill-icon">SQL</span><strong>SQL</strong><small>Database queries</small></div>
+        <div class="skill"><span class="skill-icon">Pd</span><strong>Pandas</strong><small>Data analysis</small></div>
+        <div class="skill"><span class="skill-icon">Np</span><strong>NumPy</strong><small>Numerical computing</small></div>
+        <div class="skill"><span class="skill-icon">ML</span><strong>Machine Learning</strong><small>Predictive models</small></div>
+        <div class="skill"><span class="skill-icon">Jp</span><strong>Jupyter</strong><small>Experimentation</small></div>
+        <div class="skill"><span class="skill-icon">H</span><strong>HTML & CSS</strong><small>Web development</small></div>
+        <div class="skill"><span class="skill-icon">DV</span><strong>Data Visualization</strong><small>Charts and insights</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container reveal">
+      <div class="section-heading">
+        <div class="eyebrow">Selected work</div>
+        <h2>Projects I'm exploring</h2>
+        <p>Replace these examples with your real projects and GitHub links.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project">
+          <div class="project-icon">↗</div>
+          <h3>Sales Data Analysis</h3>
+          <p>Explore sales data to discover trends, compare performance, and communicate useful insights.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+          </div>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">View Code ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-icon">⌘</div>
+          <h3>Machine Learning</h3>
+          <p>Build and evaluate a predictive model, compare results, and explain its limitations.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">ML</span>
+          </div>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">View Code ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-icon">◎</div>
+          <h3>Sentiment Analysis</h3>
+          <p>Explore text data and classify opinions as positive, neutral, or negative.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">NLP</span>
+          </div>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">View Code ↗</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container reveal">
+      <div class="contact-box">
+        <div class="eyebrow">Let's connect</div>
+        <h2>Have an idea or opportunity?</h2>
+        <p>
+          I'm interested in learning, collaborating, and discussing
+          AI and Data Science.
+        </p>
+        <a class="btn btn-primary" href="mailto:your-email@example.com">Email Me ↗</a>
+
+        <div class="actions contact-links">
+          <a class="btn" href="https://github.com/YOUR-USERNAME">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    Designed and built by Nive · <span id="year"></span>
+  </div>
+</footer>
+
 </body>
 </html>
+
